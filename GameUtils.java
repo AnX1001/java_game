@@ -5,7 +5,17 @@ public class GameUtils {
 
     public static int getPlayerChoice(Scanner scanner) {
         System.out.println("Choose rock: 1, paper: 2, scissor: 3");
-        return scanner.nextInt();
+
+        int playerChose = scanner.nextInt();
+
+        while ((playerChose != 1) && (playerChose != 2) && (playerChose != 3)) {
+            System.out.println("Invalid input, please choose again.");
+            System.out.println("Choose rock: 1, paper: 2, scissor: 3");
+
+            playerChose = scanner.nextInt();
+        }
+
+        return playerChose;
     }
 
     public static int getComputerChoice(Random random) {
