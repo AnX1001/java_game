@@ -1,4 +1,4 @@
-class Car {
+public class Car {
     private int speed;
     private String color;
     public String name;
