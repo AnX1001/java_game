@@ -35,6 +35,7 @@ public class Car {
     }
 
     public void printCarInfo() {
-        System.out.println("This car" + this.name + "has the color" + this.color + "has the speed of" + this.speed);
+        System.out.println("This car's brand is " + this.name + ", it has the color " + this.color
+                + ", and it can go up to " + this.speed + " km/h.");
     }
 }

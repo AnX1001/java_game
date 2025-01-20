@@ -5,6 +5,8 @@ public class Main {
 
         System.out.println(newCar.getSpeed());
 
+        newCar.printCarInfo();
+
     }
 
 }
